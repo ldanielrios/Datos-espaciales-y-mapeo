@@ -56,7 +56,9 @@ Bol_shp <- shapefile("C:/Users/ldani/OneDrive/Escritorio/R/Siste/DATA _ R SISTES
 
 # Mapa generado en R con ocurrencia de especies.
 world <- getMap(resolution = "low")
+
 saf_countries <- c("Brazil","Bolivia")
+
 world_saf <- world[world@data$ADMIN %in% saf_countries, ]
 (sp_map <- ggplot() + 
         geom_polygon(data = world_saf,
@@ -76,6 +78,7 @@ world_saf <- world[world@data$ADMIN %in% saf_countries, ]
 
 # Mapa a partir de archivo shape con ecoregiones de Morroney ocurrencia de especies.
 Morrone_shp <- shapefile("C:/Users/ldani/OneDrive/Escritorio/R/Siste/DATA _ R SISTES/Lowenberg_Neto_2014.shp")
+
 Morrone <- fortify(Morrone_shp, region = "Subregio_1")
 (map_Morrone <- ggplot() +
         geom_polygon(data = Morrone,
