@@ -1,2 +1,2 @@
-# Código en R
+# Código para R
 Revisar "Mark.Rmd"
