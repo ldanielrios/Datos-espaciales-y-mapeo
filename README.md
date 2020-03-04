@@ -1,6 +1,6 @@
-# Código para R
+# Código para R en línea
 Revisar "Mark.Rmd"
-# Archivo con plots
+# Archivo con plots en línea
 Revisar "Mark.pdf"
 # Markdown
-Descargar y revisar "Mark.html"
+Descargar todo y revisar "Mark.html"
